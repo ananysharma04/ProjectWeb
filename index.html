@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anany Fitness</title>
+    </head>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      /*  CSS Reset*/
+      body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/man-2604149_1280.jpg');
+        
+      }
+      .left{
+        display: inline-block;
+        border: 2px solid red;
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        line-height: 12px;
+        font-size: 26px;
+      }
+      .left img{
+        width: 123px;
+      }
+      .mid{
+        display: block;
+        width: 36%;
+        margin: 12px auto;
+        border: 2px solid rgb(14, 125, 56);
+      }
+      .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid rgb(178, 207, 48);
+      }
+      .navbar{
+        display: inline-block;
+        
+      }
+      .navbar li{
+        color: white;
+        display: inline-block;
+        font-size: 25px;
+      }
+      .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 21px;
+      }
+      .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+      }
+      .btn{
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 3px 4px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+
+      }
+      .btn:hover{
+        background-color: rgb(210, 204, 204);
+      }
+      .container{
+        border: 2px solid white;
+      margin: 72px 94px;
+       padding: 75px;
+       width: 30%;
+      border-radius: 28px;
+
+      }
+      .form-group input{
+      text-align: center;
+      display: block;
+      width: 500px;
+      padding: 7px;
+      border: 2px solid black;
+      margin: 11px auto;
+      font-size: 27px;
+      }
+       .conatiner h1{
+        text-align: center;
+       }
+       .container button{
+        display: block;
+        width: 75%;
+        margin: auto;
+       }
+    </style>
+
+<body>
+    <header class="header">
+        <div class="left">
+      <!-- left box for logo-->
+      <img src="img/dumbbells-2465478_1280.jpg" alt="">
+      <div>Anany Fitness</div>
+      
+        </div>
+        <div class="mid">
+      <!-- mid box for navbar-->
+      <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Fitness Calculator</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+        </div>
+        <div class="right">
+      <!-- right for buttons-->
+      <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+     <div class="container">
+      <h1>Join the best gym Gwalior now</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your age">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your gender">
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="Enter your locality">
+        </div>
+          <button class="btn">Submit</button>
+          
+      </form>
+     </div>
+
+</body>
+</html>
