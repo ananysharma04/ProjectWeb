@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+     <style>
+        body{
+            margin: 600px;
+            padding: 600px;
+            background-image: url(../img/Star.png);
+            background-color: blue;
+            background-size: 100%;
+        }
+        
+        .sun{
+            height: 120px;
+            width: 120px;
+            background-image: url(../img/Sun.png);
+            border-radius: 50%;
+            background-size: cover;
+            box-shadow: -4px 5px 56px #f9c05f;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            
+        }
+        .solarsystem{
+            top: 70%;
+        }
+        
+        
+        p{
+            color:white;
+            font-family: system-ui;
+            position: absolute;
+            left: -62px;
+            top: -11px;
+        }
+
+        .mercury{
+            height: 20px;
+            width: 20px;
+            background:#a94c2b;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: -4px 2px 56px #f9c05f;
+            left: 43%;
+            top: 42%;
+            transform: translate(-50%,50%);
+            animation: orbit2 2s linear infinite;
+        }  
+
+        .venus{
+            height: 40px;
+            width: 40px;
+            background-image: url(../img/Mercury.png);
+            background-size: 100%;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: -4px 2px 56px #ff22c8;
+            left: 40%;
+            top: 42%;
+            transform: translate(-50%,50%);
+            animation: orbit3 10s linear infinite;
+        }  
+
+        .earth{
+            height: 50px;
+            width: 50px;
+            background-image: url(../img/Mercury.png);
+            background-size: 100%;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: -4px 2px 56px #2855d6;
+            left: 44%;
+            top: 43%;
+            transform: translate(-50%,50%);
+            animation: orbit4 2s linear infinite;
+        }  
+      
+
+        .mars{
+            height: 30px;
+            width: 30px;
+            background-image: url(../img/Mercury.png);
+            background-size: 100%;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: -4px 2px 56px #fea535;
+            left: 46.5%;
+            top: 46.5%;
+            transform: translate(-50%,50%);
+            animation: orbit6 30s linear infinite;
+        }
+
+            .jupiter{
+            height: 40px;
+            width: 40px;
+            background-image: url(../img/Mercury.png);
+            background-size: 100%;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: -4px 2px 56px #cac2b9;
+            left: 45%;
+            top: 45%;
+            transform: translate(-50%,50%);
+            animation: orbit7 60s linear infinite;
+        } 
+        @keyframes orbit2{
+            from{transform:rotate(0deg)translatex(88px)rotate(0deg); }
+            to{transform:rotate(360deg)translatex(88px)rotate(-360deg); }
+        }  
+        @keyframes orbit3{
+            from{transform:rotate(0deg)translatex(70px)rotate(0deg); }
+            to{transform:rotate(360deg)translatex(70px)rotate(-360deg); }
+        } 
+        @keyframes orbit4{
+            from{transform:rotate(0deg)translatex(70px)rotate(0deg); }
+            to{transform:rotate(360deg)translatex(70px)rotate(-360deg); }
+        } 
+
+        @keyframes orbit6{
+            from{transform:rotate(0deg)translatex(125px)rotate(0deg); }
+            to{transform:rotate(360deg)translatex(125px)rotate(-360deg); }
+        } 
+        @keyframes orbit7{
+            from{transform:rotate(0deg)translatex(160px)rotate(0deg); }
+            to{transform:rotate(360deg)translatex(160px)rotate(-360deg); }
+        } 
+
+        p{
+            color: white;
+             font-family: system-ui;
+             position: absolute;
+             left: -62px;
+             top: -11px;
+        }
+        .mercury-outline,.venus-outline-1,.earth-outline-1,.mars-outline-1,.jupitar-outline-1,.saturn-outline-1,.uranus-outline-1,.neptune-outline-1{
+            border-radius: 50%;
+            border: 1px dotted grey;
+            position: absolute;
+            
+
+            transform: translate(-50%,50%);
+        }
+        .mercury-outline{
+            height: 140px;
+            width:140px;
+            left: 50%;
+            top: 38%;
+
+        }
+        .venus-outline-1{
+            height: 175px;
+            width:175px;
+           left: 50%;
+           top: 33%;
+        }
+        .earth-outline-1{
+            height: 250px;
+            width:250px;
+            border-radius: 50%;
+            border: 1px dotted grey;
+           left: 50%;
+           top: 23%;
+        }
+
+        .mars-outline-1{
+            height: 380px;
+            width:380px;
+            border-radius: 50%;
+            border: 1px dotted grey;
+           left: 54%;
+           top: 43%;
+        }
+
+        .jupiter-outline-1{
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            border: 1px dotted grey;
+           left: 90%;
+           top: 32%;
+        }
+        
+        
+        
+     </style>
+    
+</head>
+<body>
+    <div class="solarsystem">
+    <div class="sun"></div>
+
+    <div class="mercury-outline">
+        <div class="mercury">
+            <p>Mercury</p>
+        </div>
+    </div>
+    <div class="venus-outline-1">
+        <div class="venus">
+            <p>Venus</p>
+        </div>
+    </div> 
+
+    <div class="earth-outline-1">
+        <div class="earth">
+            <p>Earth</p>
+        </div>
+         </div>
+        </div>
+        <div class="mars-outline-1">
+            <div class="mars">
+                <p>Mars</p>
+              </div>
+        </div>
+    <div class="jupiter-outline-1">
+        <div class="jupiter">
+            <p>Jupiter</p>
+        </div>
+    </div> 
+    <div class="saturn-outline-1">
+        <div class="saturn">
+            <p>Saturn</p>
+        </div>
+    </div> 
+
+    <div class="uranus-outline-1">
+        <div class="uranus">
+            <p>Uranus</p>
+        </div>
+    </div> 
+    <div class="neptune-outline-1">
+        <div class="neptune">
+            <p>Neptune</p>
+        </div>
+    </div> 
+</body>
+</html> 
